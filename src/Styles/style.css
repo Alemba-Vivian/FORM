@@ -3,6 +3,8 @@
     --main-background--clr:#ffffff;
     --sidebar-background-clr:#260743;
     --section-background-clr:#33095b;
+  
+   
     --text-clr:#ffffff;
     --btn-clr:#b57cec;
     --input-border-clr:#edbb48;
@@ -60,12 +62,33 @@ body{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    color: #edbb48;
+    /* color: #edbb48; */
+    color: #33095b;
   
     
 }
 .section2 h3{
     padding-bottom: 40px;
+    color: #edbb48;
+}
+form{
+    background-color: #F5F5F5;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.flex-container-space{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 105px;
 }
 .form-control{
     padding: 20px;
@@ -89,15 +112,44 @@ input, select{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    border: 1px solid #edbb48;
-    background-color: var(--section-background-clr);
-    color: #edbb48;
+    border: 1px solid #33095b;
+    background-color: #F5F5F5;
+    color: #33095b;
+    outline: none;
 }
 input[type ="email"]{
     /* width: 450px; */
-    text-align: center;
+    /* text-align: center; */
+}
+.input-fields{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.input-fields span{
+    position: absolute;
+    right: 2px;
 }
 #ZIP{
     /* width: 450px;  */
-    text-align: center;
+    /* text-align: center; */
+}
+.error-icon{
+    color: red;
+    display: none;
+ 
+  
+}
+.success-icon{
+    color: green;
+    display: none;
+}
+.errorMessage{
+    /* display: block; */
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 2px;
 }
