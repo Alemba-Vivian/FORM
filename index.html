@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/8863/8863863.png">
+    <script src="https://kit.fontawesome.com/6a6bdefd0d.js" crossorigin="anonymous"></script>
     <title>form</title>
 </head>
 
@@ -27,20 +28,42 @@
         <div class="section2">
             <h3>Let's get you started</h3>
 
-            <form action="" id="form">
-                <div class="form-control">
-                    <input id="firstName" type="text" placeholder="First Name">
-                    <input id="lastName" type="text" placeholder="last Name">
+            <form action="" id="form" novalidate>
+                <div class="form-control flex-container">
+                 <div class="input-fields">
+                    <input id="firstName" type="text" placeholder="First Name" required>
+                    <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                    <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                    <div class="errorMessage">error message</div>
+                 </div>
+                
+
+                 <div class="input-fields">
+                    <input id="lastName" type="text" placeholder="last Name" required>
+                    <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                    <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                 </div>
+              
+                
+                </div>
+                <div class="form-control flex-container">
+                    <div class="input-fields">
+                        <input id="email" type="email" placeholder="Email" required>
+                        <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        
+                    </div>
+                    <div class="input-fields">
+                        <input id="ZIP" type="number" placeholder="Zip Code" required>
+                        <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                    </div>    
                 </div>
 
-
-                <div class="form-control">
-                    <input id="email" type="email" placeholder="Email">
-                    <input id="ZIP" type="number" placeholder="Zip Code">
-                </div>
-                <div class="form-control">
+                <div class="form-control flex-container flex-container-space">
+                    <div>
                     <label for="">Country</label>
-                    <select name="" id="country">
+                    <select name="" id="country" >
                         <option value="">Select</option>
                         <option value="">Kenya</option>
                         <option value="">Uganda</option>
@@ -54,9 +77,11 @@
                         <option value="">Canada</option>
 
                     </select>
+                   </div>
 
+                <div>
                     <label for="">State</label>
-                    <select name="" id="state">
+                    <select name="" id="state" >
                         <option value="">Select</option>
                         <option value="">Nairobi</option>
                         <option value="">Kampala</option>
@@ -70,7 +95,10 @@
                     </select>
                 </div>
 
-                <div class="form-control">
+            </div>
+
+                <div class="form-control flex-container flex-container-space">
+                    <div>
                     <label for="">Mobile No</label>
                     <select id="phoneCode" name="" id="">
 
@@ -86,12 +114,25 @@
                         <option value="">+1</option>
 
                     </select>
-                    <input id="phoneNumber"  type="number" placeholder="Enter phone number">
+                 </div>
+                <div class="input-fields">
+                    <input id="phoneNumber"  type="number" placeholder="Enter phone number" required>
+                    <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                    <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
                 </div>
+            </div>
 
-                <div class="form-control">
-                    <input id="password" type="password" placeholder="Password">
-                    <input id="confirmPassword" type="password" placeholder="Confirm Password">
+                <div class="form-control flex-container">
+                    <div class="input-fields">
+                        <input id="password" type="password" placeholder="Password" required>
+                        <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                    </div>
+                    <div class="input-fields">
+                        <input id="confirmPassword" type="password" placeholder="Confirm Password" required>
+                        <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                        <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                    </div> 
                 </div>
                 <div class="form-control myButton">
                     <button id="btn-submit" type="submit">SIGN UP</button>
