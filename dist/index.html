@@ -28,40 +28,47 @@
         <div class="section2">
             <h3>Let's get you started</h3>
 
-            <form action="" id="form" novalidate>
-                <div class="form-control flex-container">
-                 <div class="input-fields">
-                    <input id="firstName" type="text" placeholder="First Name" required>
+            <form action="" id="form">
+                <div class="form-control flex-container"> 
+                 <div class="input-fields control">
+                     <div class="mylabel">First Name</div>
+                    <input required id="firstName" type="text" minlength="5" placeholder="First Name">
                     <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
                     <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
-                    <div class="errorMessage">error message</div>
+                    <div class="errorMessage"></div>
                  </div>
                 
 
-                 <div class="input-fields">
-                    <input id="lastName" type="text" placeholder="last Name" required>
+                 <div class="input-fields  control">
+                    <div class="mylabel">Last Name</div>
+                    <input  required id="lastName" type="text" minlength="5" placeholder="last Name">
                     <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
                     <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                    <div class="errorMessage"></div>
                  </div>
               
                 
                 </div>
                 <div class="form-control flex-container">
-                    <div class="input-fields">
-                        <input id="email" type="email" placeholder="Email" required>
+                    <div class="input-fields control"> 
+                         <div class="mylabel">Email</div>
+                        <input  id="email" type="email" placeholder="Email" pattern="^(.+)@(.+)$" required>
                         <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
                         <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        <div class="errorMessage"></div>
                         
                     </div>
-                    <div class="input-fields">
-                        <input id="ZIP" type="number" placeholder="Zip Code" required>
+                    <div class="input-fields control">
+                        <div class="mylabel">Zip Code</div>
+                        <input required id="ZIP" type="number" placeholder="Zip Code">
                         <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
                         <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        <div class="errorMessage"></div>
                     </div>    
                 </div>
 
                 <div class="form-control flex-container flex-container-space">
-                    <div>
+                    <div >
                     <label for="">Country</label>
                     <select name="" id="country" >
                         <option value="">Select</option>
@@ -79,7 +86,7 @@
                     </select>
                    </div>
 
-                <div>
+                <div >
                     <label for="">State</label>
                     <select name="" id="state" >
                         <option value="">Select</option>
@@ -98,7 +105,7 @@
             </div>
 
                 <div class="form-control flex-container flex-container-space">
-                    <div>
+                    <div >
                     <label for="">Mobile No</label>
                     <select id="phoneCode" name="" id="">
 
@@ -115,23 +122,29 @@
 
                     </select>
                  </div>
-                <div class="input-fields">
-                    <input id="phoneNumber"  type="number" placeholder="Enter phone number" required>
+                <div class="input-fields control">
+                    <div class="mylabel">Number</div>
+                    <input required id="phoneNumber"  type="number" placeholder="Enter phone number" >
                     <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
                     <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                    <div class="errorMessage"></div>
                 </div>
             </div>
 
                 <div class="form-control flex-container">
-                    <div class="input-fields">
-                        <input id="password" type="password" placeholder="Password" required>
+                    <div class="input-fields control">
+                        <div class="mylabel">Password</div>
+                        <input  id="password" type="password" placeholder="Password" required minlength="8" >
                         <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
                         <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        <div class="errorMessage"></div>
                     </div>
-                    <div class="input-fields">
-                        <input id="confirmPassword" type="password" placeholder="Confirm Password" required>
+                    <div class="input-fields control">
+                        <div class="mylabel">Confirm Password</div>
+                        <input match="password"  id="confirmPassword" type="password" placeholder="Confirm Password" required minlength="8" >
                         <span class="error-icon"><i class="fa-solid fa-circle-exclamation"></i></span>
                         <span class="success-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        <div class="errorMessage"></div>
                     </div> 
                 </div>
                 <div class="form-control myButton">

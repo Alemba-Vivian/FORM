@@ -123,21 +123,23 @@ input[type ="email"]{
 }
 .input-fields{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     position: relative;
 }
 .input-fields span{
     position: absolute;
-    right: 2px;
+    right: 6px;
+    bottom: 10px;
 }
 #ZIP{
     /* width: 450px;  */
     /* text-align: center; */
 }
 .error-icon{
-    color: red;
+    color: #edbb48;
     display: none;
  
   
@@ -147,9 +149,19 @@ input[type ="email"]{
     display: none;
 }
 .errorMessage{
-    /* display: block; */
-    display: none;
+    /* display: none; */
     position: absolute;
-    top: 40px;
+    top: 70px;
     left: 2px;
+    color: #edbb48;
+}
+
+.mylabel{
+    padding-bottom: 10px;
+}
+.border-red{
+    border: 2px solid #edbb48;
+}
+.border-green{
+    border: 2px solid green;
 }
